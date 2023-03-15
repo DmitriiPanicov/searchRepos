@@ -1,0 +1,71 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.container{
+    max-width: 1110px;
+    padding: 30px 50px 0;
+    margin: 0 auto;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+}
+
+form span{
+    font-size: 24px;
+}
+
+#searchRequest{
+    background-color: inherit;
+    border: 2px solid;
+    outline: none;
+    transition: 0.5s;
+}
+
+#btn{
+    font-family: 'Roboto Mono', monospace;
+    background-color: inherit;
+    transition: 0.5s;
+}
+
+#btn:hover, #searchRequest:hover{
+    transform: scale(1.1);
+}
+
+.repository-item{
+    padding: 20px 10px;
+    background-color: inherit;
+}
+
+.repository-item + .repository-item{
+    margin-top: 20px;
+}
+
+p,span{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+}
